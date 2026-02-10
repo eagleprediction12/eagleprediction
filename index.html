@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JIO TOSS</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #0b0f1a, #000);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* LOGO */
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.6);
+}
+
+/* COUNT */
+.count {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00f7ff;
+    margin: 10px 0 25px;
+}
+
+/* POINTS */
+.points {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.points div {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.points span {
+    color: #00ff9d;
+    margin-right: 6px;
+}
+
+/* BUTTON */
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    margin: 30px 0;
+    color: #000;
+}
+
+/* NEON RED GREEN BLINK */
+@keyframes neonRG {
+    0% {
+        background: #00ff66;
+        color: #000;
+        box-shadow: 0 0 10px #00ff66, 0 0 25px #00ff66;
+        transform: scale(1);
+    }
+    50% {
+        background: #4503f9;
+        color: #fff;
+        box-shadow: 0 0 10px #ff0033, 0 0 30px #ff0033;
+        transform: scale(1.08);
+    }
+    100% {
+        background: #00ff66;
+        color: #000;
+        box-shadow: 0 0 10px #00ff66, 0 0 25px #00ff66;
+        transform: scale(1);
+    }
+}
+
+.neon-blink {
+    animation: neonRG 1s infinite;
+}
+
+/* TIMER */
+.timer {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #00f7ff;
+    font-weight: bold;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>EAGLE PREDICTION🏆</h1>
+
+    <!-- APNA LOGO -->
+    <img src="banner.png.jpg" alt="Logo" class="logo">
+
+    <div class="count">JOIN NOW</div>
+
+    <div class="points"> <center>
+        <div><span>✔</span>70/86 MATCH PASSED RECORD 🏆</div>
+        <div><span>✔</span>Oldest CRICKET Tipper Since 2012 🏆</div>
+        <div><span>✔</span>44/42 BBL MATCHES PASSED RECORD 🏆</div>
+    </div></center>
+
+    <!-- TELEGRAM BUTTON -->
+    <a href="https://t.me/+djpHX5T6co9hOGQ1" class="btn neon-blink">
+       JOIN FREE TELEGRAM🚀
+    </a>
+
+    <div class="timer">
+        FREE JOINING ENDS IN... <span class="highlight" id="counter">58</span>
+    </div>
+
+    <div class="footer-text">
+        99% Right Accuracy ke sath best result
+    </div>
+
+</div>
+
+<script>
+let time = 58;
+const counter = document.getElementById("counter");
+
+setInterval(() => {
+    if (time > 0) {
+        time--;
+        counter.innerText = time;
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
